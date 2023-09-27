@@ -23,3 +23,23 @@ function editInPlace() {
 }
 editInPlace();
 //-----------------------------------
+/*Como visto no desafio anterior, a declaração const por si só não protege realmente seus dados contra mutações. 
+Para garantir que seus dados não sejam alterados, o JavaScript fornece uma função 'Object.freeze' para evitar a mutação dos dados.*/
+//-----------------------------------
+function freezeObj() {
+    const MATH_CONSTANTS = {
+      PI: 3.14
+    };
+    // Only change code below this line
+    Object.freeze(MATH_CONSTANTS)
+  
+    // Only change code above this line
+    try {
+      MATH_CONSTANTS.PI = 99;
+    } catch(ex) {
+      console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+  }
+  const PI = freezeObj();
+//-----------------------------------
