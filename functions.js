@@ -36,28 +36,28 @@ const HIGH_TEMPERATURES = {
   // Only change code above this line
 //-----------------------------------
 const HIGH_TEMPERATURES2 = {
-    yesterday: 75,
-    today: 77,
-    tomorrow: 80
+    yesterday3: 75,
+    today3: 77,
+    tomorrow3: 80
   };
   
   // Only change code below this line
     
-  const {today: highToday} = HIGH_TEMPERATURES2;
-  const {tomorrow: highTomorrow} = HIGH_TEMPERATURES2; 
+  const {today3: highToday3} = HIGH_TEMPERATURES2;
+  const {tomorrow3: highTomorrow3} = HIGH_TEMPERATURES2; 
   
   // Only change code above this line
 //-----------------------------------
 const LOCAL_FORECAST = {
-    yesterday: { low: 61, high: 75 },
-    today: { low: 64, high: 77 },
-    tomorrow: { low: 68, high: 80 }
+    yesterday2: { low: 61, high: 75 },
+    today2: { low: 64, high: 77 },
+    tomorrow2: { low: 68, high: 80 }
   };
   
   // Only change code below this line
     
-  const {today: { low: lowToday}} = LOCAL_FORECAST;
-  const {today: { high: highToday}} = LOCAL_FORECAST;
+  const {today2: { low: lowToday2}} = LOCAL_FORECAST;
+  const {today2: { high: highToday2}} = LOCAL_FORECAST;
   
   // Only change code above this line
 //-----------------------------------
