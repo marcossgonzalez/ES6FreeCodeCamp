@@ -19,39 +19,39 @@ const result = {
     success: ["max-length", "no-amd", "prefer-arrow-functions"],
     failure: ["no-var", "var-on-top", "linebreak"],
     skipped: ["no-extra-semi", "no-dup-keys"]
-  };
-  function makeList(arr) {
+};
+function makeList(arr) {
     // Only change code below this line
     let i = 0;
     let failureItems = [];
     do {
-      failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
-      i++;
-      }while(i<arr.length);
-      console.log(failureItems);
+        failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+        i++;
+    } while (i < arr.length);
+    console.log(failureItems);
     // Only change code above this line
     return failureItems;
-    
-  }
-//----------------------------------- 
-  const failuresList = makeList(result.failure);
 
-  const createPerson = (name, age, gender) => {
+}
+//----------------------------------- 
+const failuresList = makeList(result.failure);
+
+const createPerson = (name, age, gender) => {
     // Only change code below this line
     return {
-      name,age,gender
+        name, age, gender
     };
     // Only change code above this line
-  };
+};
 //-----------------------------------
 // Only change code below this line
 const bicycle = {
     gear: 2,
-    setGear (newGear) {
-      this.gear = newGear;
+    setGear(newGear) {
+        this.gear = newGear;
     }
-  };
-  // Only change code above this line
-  bicycle.setGear(3);
-  console.log(bicycle.gear);
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
 //-----------------------------------
