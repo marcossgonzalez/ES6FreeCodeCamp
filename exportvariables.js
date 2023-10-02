@@ -26,3 +26,25 @@ const uppercaseString = (string) => {
     return string.toLowerCase()
   }
   export {lowercaseString};
+//----------------------------------------
+/*import permite que você escolha quais partes de um arquivo ou módulo carregar. 
+Na lição anterior, os exemplos exportados foram adicionados do arquivo math_functions.js. 
+Veja como você pode importá-lo para usar em outro arquivo:
+import { add } from './math_functions.js';
+*/
+//----------------------------------------
+// Only change code above this line
+import {uppercaseString, lowercaseString} from './string_functions.js'
+uppercaseString("hello");
+lowercaseString("WORLD!");
+//----------------------------------------
+/*Suponha que você tenha um arquivo e queira 
+importar todo o seu conteúdo para o arquivo atual. 
+Isso pode ser feito com a sintaxe 'import * as'.
+Ex:
+import * as myMathModule from "./math_functions.js";
+
+e para as funções serem usadas:
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);*/
+//----------------------------------------
