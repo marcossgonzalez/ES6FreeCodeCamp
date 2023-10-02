@@ -48,3 +48,24 @@ e para as funções serem usadas:
 myMathModule.add(2,3);
 myMathModule.subtract(5,3);*/
 //----------------------------------------
+// Only change code above this line
+import * as stringFunctions from './string_functions.js';
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+//----------------------------------------
+export default function subtract(x, y) {
+    return x - y;
+  }
+//----------------------------------------
+/*Para importar uma exportação padrão, você precisa usar uma sintaxe de importação diferente. 
+No exemplo a seguir, add é a exportação padrão do arquivo math_functions.js. Veja como importá-lo:
+
+import add from "./math_functions.js"; nesse caso, não utilizamos as chaves no 'add'*/
+//----------------------------------------
+import subtract from './math_functions.js';  
+// Only change code above this line
+
+subtract(7,4);
+//----------------------------------------
+
+//----------------------------------------
