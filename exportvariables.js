@@ -23,7 +23,7 @@ const uppercaseString = (string) => {
   export {uppercaseString};
   
   const lowercaseString = (string) => {
-    return string.toLowerCase()
+    return string.toLowerCase();
   }
   export {lowercaseString};
 //----------------------------------------
